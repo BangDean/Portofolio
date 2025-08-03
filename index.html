@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-900 text-gray-100">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar-fixed bg-gray-900 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-300">Portofolio</div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="nav-link text-gray-300 hover:text-gray-100 transition duration-300 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-300 hover:text-gray-100 transition duration-300 font-medium">About Me</a>
+                    <a href="#skills" class="nav-link text-gray-300 hover:text-gray-100 transition duration-300 font-medium">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-gray-100 transition duration-300 font-medium">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-gray-100 transition duration-300 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 border-t border-gray-700">
+            <div class="px-6 py-4 space-y-2">
+                <a href="#home" class="block text-gray-300 hover:text-gray-100 font-medium">Home</a>
+                <a href="#about" class="block text-gray-300 hover:text-gray-100 font-medium">About Me</a>
+                <a href="#skills" class="block text-gray-300 hover:text-gray-100 font-medium">Skills</a>
+                <a href="#projects" class="block text-gray-300 hover:text-gray-100 font-medium">Projects</a>
+                <a href="#contact" class="block text-gray-300 hover:text-gray-100 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20 relative">
+        <div class="container mx-auto px-6 text-center text-white relative z-10">
+            <div class="mb-8">
+                <img src="gambar/Profil.jpg" 
+                     alt="Profile Photo" 
+                     class="profile-image mx-auto">
+            </div>
+            <h1 class="text-5xl font-bold mb-6 text-white">M.Ghibran Adean</h1>
+            <div class="text-2xl mb-8">
+                <div class="typing-animation">
+                    <span class="typing-text active">Web Developer</span>
+                    <span class="typing-text">Graphic Designer</span>
+                    <span class="typing-text">Database Administrator</span>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <button class="btn-primary btn-animate text-white px-8 py-3 rounded-full font-semibold mr-4 inline-flex items-center">
+                    <i class="fas fa-download mr-2"></i>Download CV
+                </button>
+            </div>
+            
+            <div class="flex justify-center space-x-6">
+                <a href="https://www.instagram.com/ghibranadn/" class="social-link text-gray-300 text-3xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/m-ghibran-adean-702470369" class="social-link text-gray-300 text-3xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://wa.me/qr/OHL2UEOV6NWIE1" class="social-link text-gray-300 text-3xl">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/share/176zBEcsSj/" class="social-link text-gray-300 text-3xl">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold section-title mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-gray-500 to-gray-300 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800 rounded-2xl shadow-xl p-8 border border-gray-700 hover-lift">
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Saya adalah seorang web developer dan designer yang passionate dalam menciptakan solusi digital yang inovatif dan user-friendly. Dengan pengalaman lebih dari 3 tahun di bidang pengembangan web, saya telah mengerjakan berbagai proyek mulai dari website perusahaan hingga aplikasi web kompleks.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                        Keahlian saya mencakup front-end dan back-end development, dengan fokus pada teknologi modern seperti HTML5, CSS3, JavaScript, PHP, dan MySQL. Saya juga memiliki kemampuan dalam desain grafis menggunakan Adobe Creative Suite.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        Saya selalu berusaha mengikuti perkembangan teknologi terbaru dan menerapkan best practices dalam setiap proyek yang saya kerjakan. Tujuan saya adalah menciptakan pengalaman digital yang tidak hanya fungsional, tetapi juga memberikan nilai tambah bagi pengguna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold section-title mb-4">My Skills</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+                <!-- HTML -->
+                <div class="skill-item text-center relative" data-skill="html" data-rating="4">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-orange-400">
+                        <i class="fab fa-html5 text-6xl text-orange-500 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">HTML</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+                
+                <!-- CSS -->
+                <div class="skill-item text-center relative" data-skill="css" data-rating="4">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-blue-500">
+                        <i class="fab fa-css3-alt text-6xl text-blue-500 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">CSS</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+                
+                <!-- PHP -->
+                <div class="skill-item text-center relative" data-skill="php" data-rating="4">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-indigo-600">
+                        <i class="fab fa-php text-6xl text-indigo-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">PHP</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="skill-item text-center relative" data-skill="javascript" data-rating="2">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-yellow-400">
+                        <i class="fab fa-js-square text-6xl text-yellow-500 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">JavaScript</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+                
+                <!-- MySQL -->
+                <div class="skill-item text-center relative" data-skill="mysql" data-rating="4">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-cyan-600">
+                        <i class="fas fa-database text-6xl text-cyan-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">MySQL</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+                
+                <!-- Adobe Illustrator -->
+                <div class="skill-item text-center relative" data-skill="illustrator" data-rating="3">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-orange-600">
+                        <i class="fas fa-paint-brush text-6xl text-orange-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">Illustrator</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+                
+                <!-- Adobe Photoshop -->
+                <div class="skill-item text-center relative" data-skill="photoshop" data-rating="2">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-sky-600">
+                        <i class="fas fa-image text-6xl text-sky-600 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">Photoshop</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+                
+                <!-- Microsoft Office -->
+                <div class="skill-item text-center relative" data-skill="office" data-rating="5">
+                    <div class="skill-card bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 hover:border-red-500">
+                        <i class="fas fa-file-alt text-6xl text-red-500 mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-200">MS Office</h3>
+                    </div>
+                    <div class="skill-rating">
+                        <div class="stars"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold section-title mb-4">My Projects</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-gray-500 to-gray-300 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- Project Slider -->
+                <div class="slide-container project-card bg-gray-800">
+                    <div class="slide active">
+                        <div class="grid md:grid-cols-2 gap-8 p-8">
+                            <div>
+                                <img src="https://via.placeholder.com/600x400/3b82f6/ffffff?text=E-Commerce+Website" 
+                                     alt="Project 1" 
+                                     class="w-full rounded-lg shadow-lg">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-300">E-Commerce Website</h3>
+                                <p class="text-gray-300 mb-4">Website e-commerce lengkap dengan sistem pembayaran, manajemen produk, dan dashboard admin. Dibangun menggunakan PHP, MySQL, dan Bootstrap.</p>
+                                <div class="flex space-x-2 mb-6">
+                                    <span class="bg-orange-900 text-orange-200 px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+                                    <span class="bg-cyan-900 text-cyan-200 px-3 py-1 rounded-full text-sm font-medium">MySQL</span>
+                                    <span class="bg-purple-900 text-purple-200 px-3 py-1 rounded-full text-sm font-medium">Bootstrap</span>
+                                </div>
+                                <button onclick="openModal('modal1')" class="btn-primary text-white px-6 py-2 rounded-lg inline-flex items-center">
+                                    <i class="fas fa-images mr-2"></i>Lihat Screenshots
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <div class="grid md:grid-cols-2 gap-8 p-8">
+                            <div>
+                                <img src="https://via.placeholder.com/600x400/1e40af/ffffff?text=Company+Profile" 
+                                     alt="Project 2" 
+                                     class="w-full rounded-lg shadow-lg">
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <h3 class="text-2xl font-bold mb-4 text-gray-300">Company Profile</h3>
+                                <p class="text-gray-300 mb-4">Website company profile dengan desain modern dan responsive. Dilengkapi dengan sistem manajemen konten untuk update berita dan informasi perusahaan.</p>
+                                <div class="flex space-x-2 mb-6">
+                                    <span class="bg-orange-900 text-orange-200 px-3 py-1 rounded-full text-sm font-medium">HTML</span>
+                                    <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm font-medium">CSS</span>
+                                    <span class="bg-yellow-900 text-yellow-200 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+                                </div>
+                                <button onclick="openModal('modal2')" class="btn-primary text-white px-6 py-2 rounded-lg inline-flex items-center">
+                                    <i class="fas fa-images mr-2"></i>Lihat Screenshots
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <div class="flex justify-center items-center mt-8 space-x-4">
+                    <button onclick="prevSlide()" class="bg-gray-700 text-gray-300 hover:text-gray-100 w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition duration-300 flex items-center justify-center border border-gray-600">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="flex space-x-3">
+                        <button onclick="changeSlide(0)" class="slide-btn bg-gray-500 w-4 h-4 rounded-full transition duration-300"></button>
+                        <button onclick="changeSlide(1)" class="slide-btn bg-gray-300 w-4 h-4 rounded-full transition duration-300"></button>
+                    </div>
+                    <button onclick="nextSlide()" class="bg-gray-700 text-gray-300 hover:text-gray-100 w-12 h-12 rounded-full shadow-lg hover:shadow-xl transition duration-300 flex items-center justify-center border border-gray-600">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Project Details -->
+    <div id="modal1" class="modal">
+        <div class="modal-content bg-gray-800">
+            <span class="close text-gray-400" onclick="closeModal('modal1')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4 text-gray-300">E-Commerce Website - Screenshots</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <img src="https://via.placeholder.com/400x300/6b7280/ffffff?text=Homepage+Design" alt="Homepage" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+                <img src="https://via.placeholder.com/400x300/4b5563/ffffff?text=Product+Page" alt="Product Page" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+                <img src="https://via.placeholder.com/400x300/374151/ffffff?text=Shopping+Cart" alt="Shopping Cart" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+                <img src="https://via.placeholder.com/400x300/1f2937/ffffff?text=Admin+Dashboard" alt="Admin Panel" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+            </div>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content bg-gray-800">
+            <span class="close text-gray-400" onclick="closeModal('modal2')">&times;</span>
+            <h2 class="text-2xl font-bold mb-4 text-gray-300">Company Profile - Screenshots</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <img src="https://via.placeholder.com/400x300/6b7280/ffffff?text=Homepage+Hero" alt="Homepage" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+                <img src="https://via.placeholder.com/400x300/4b5563/ffffff?text=About+Company" alt="About Page" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+                <img src="https://via.placeholder.com/400x300/374151/ffffff?text=Services+Page" alt="Services" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+                <img src="https://via.placeholder.com/400x300/1f2937/ffffff?text=Contact+Form" alt="Contact" class="rounded-lg cursor-pointer hover:opacity-75 transition" onclick="openImageModal(this.src)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal for Full Size View -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content max-w-4xl bg-gray-800">
+            <span class="close text-gray-400" onclick="closeModal('imageModal')">&times;</span>
+            <img id="modalImage" src="" alt="Full Size" class="w-full rounded-lg">
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 contact-form">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Contact Me</h2>
+                <div class="w-20 h-1 bg-white mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <form class="bg-gray-800 rounded-2xl shadow-2xl p-8 border border-gray-700 hover-lift">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-gray-300 text-sm font-bold mb-2">Nama</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 text-sm font-bold mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-300 text-sm font-bold mb-2">Subject</label>
+                        <input type="text" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-300 text-sm font-bold mb-2">Pesan</label>
+                        <textarea rows="5" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary btn-animate text-white px-8 py-3 rounded-lg font-semibold inline-flex items-center">
+                            <i class="fas fa-paper-plane mr-2"></i>Kirim Pesan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-300">&copy; 2025 Portofolio Saya. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Typing animation for professions
+        const typingTexts = document.querySelectorAll('.typing-text');
+        let currentTextIndex = 0;
+
+        function changeTypingText() {
+            typingTexts[currentTextIndex].classList.remove('active');
+            currentTextIndex = (currentTextIndex + 1) % typingTexts.length;
+            typingTexts[currentTextIndex].classList.add('active');
+        }
+
+        // Change text every 3 seconds
+        setInterval(changeTypingText, 3000);
+
+        // Skills rating system - Updated for gray theme
+        const skillRatings = {
+            'html': 4,
+            'css': 4,
+            'php': 4,
+            'javascript': 2,
+            'mysql': 4,
+            'illustrator': 3,
+            'photoshop': 2,
+            'office': 5
+        };
+
+        // Add hover effect to skills
+        document.querySelectorAll('.skill-item').forEach(item => {
+            const skill = item.dataset.skill;
+            const rating = skillRatings[skill];
+            
+            item.addEventListener('mouseenter', function() {
+                const starsContainer = this.querySelector('.stars');
+                starsContainer.innerHTML = '';
+                
+                for (let i = 1; i <= 5; i++) {
+                    const star = document.createElement('span');
+                    star.innerHTML = '★';
+                    star.className = 'star';
+                    star.style.animationDelay = (i * 0.1) + 's';
+                    
+                    if (i <= rating) {
+                        if (skill === 'html') star.style.color = '#f97316';
+                        else if (skill === 'css') star.style.color = '#3b82f6';
+                        else if (skill === 'php') star.style.color = '#4f46e5';
+                        else if (skill === 'javascript') star.style.color = '#eab308';
+                        else if (skill === 'mysql') star.style.color = '#0891b2';
+                        else if (skill === 'illustrator') star.style.color = '#ea580c';
+                        else if (skill === 'photoshop') star.style.color = '#0284c7';
+                        else if (skill === 'office') star.style.color = '#dc2626';
+                        else star.style.color = '#3b82f6';
+                    } else {
+                        star.style.color = '#ddd';
+                    }
+                    
+                    starsContainer.appendChild(star);
+                }
+            });
+        });
+
+        // Project slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slideButtons = document.querySelectorAll('.slide-btn');
+
+        function changeSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            slideButtons[currentSlide].classList.remove('bg-blue-600');
+            slideButtons[currentSlide].classList.add('bg-blue-300');
+            
+            currentSlide = index;
+            
+            slides[currentSlide].classList.add('active');
+            slideButtons[currentSlide].classList.remove('bg-blue-300');
+            slideButtons[currentSlide].classList.add('bg-blue-600');
+        }
+
+        function nextSlide() {
+            const nextIndex = (currentSlide + 1) % slides.length;
+            changeSlide(nextIndex);
+        }
+
+        function prevSlide() {
+            const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+            changeSlide(prevIndex);
+        }
+
+
+        // Auto slide every 6 seconds
+        setInterval(() => {
+            nextSlide();
+        }, 6000);
+
+        // Modal functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Image modal for full size view
+        function openImageModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModal').style.display = 'block';
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                
+                // Close mobile menu after clicking
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah dikirim. Saya akan segera menghubungi Anda kembali.');
+            this.reset();
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(17, 24, 39, 0.98)';
+                navbar.style.boxShadow = '0 4px 20px rgba(107, 114, 128, 0.1)';
+            } else {
+                navbar.style.background = 'rgba(17, 24, 39, 0.95)';
+                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Initialize skill progress bars animation
+        window.addEventListener('load', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const progressBars = entry.target.querySelectorAll('.skill-progress-fill');
+                        progressBars.forEach(bar => {
+                            bar.style.transform = 'scaleX(1)';
+                        });
+                    }
+                });
+            });
+
+            document.querySelectorAll('.skill-item').forEach(skill => {
+                observer.observe(skill);
+            });
+        });
+    </script>
+</body>
+</html>
