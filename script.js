@@ -241,3 +241,97 @@
                 }, 100);
             }
         });
+
+// Fungsi Download CV
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.getElementById('downloadCV');
+    const downloadIcon = document.getElementById('downloadIcon');
+    const downloadText = document.getElementById('downloadText');
+
+    // Event listener untuk tombol download
+    downloadBtn.addEventListener('click', function() {
+        downloadCV();
+    });
+});
+
+function downloadCV() {
+    const downloadBtn = document.getElementById('downloadCV');
+    const downloadIcon = document.getElementById('downloadIcon');
+    const downloadText = document.getElementById('downloadText');
+
+    // Ubah tampilan tombol saat loading
+    downloadIcon.className = 'fas fa-spinner fa-spin mr-2';
+    downloadText.textContent = 'Downloading...';
+    downloadBtn.disabled = true;
+
+    // Path ke file CV PDF (sesuaikan dengan lokasi file Anda)
+    const cvPath = 'cv/CV-M-Ghibran-Adean.pdf'; // Ganti dengan path file CV Anda
+    
+    // Buat element link untuk download
+    const link = document.createElement('a');
+    link.href = cvPath;
+    link.download = 'CV-M-Ghibran-Adean.pdf'; // Nama file saat di download
+    
+    // Trigger download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Reset tombol setelah 1.5 detik
+    setTimeout(() => {
+        downloadIcon.className = 'fas fa-download mr-2';
+        downloadText.textContent = 'Download CV';
+        downloadBtn.disabled = false;
+    }, 1500);
+}
+
+// Fungsi alternatif jika ingin menggunakan fetch untuk download
+function downloadCVWithFetch() {
+    const downloadBtn = document.getElementById('downloadCV');
+    const downloadIcon = document.getElementById('downloadIcon');
+    const downloadText = document.getElementById('downloadText');
+
+    // Ubah tampilan tombol saat loading
+    downloadIcon.className = 'fas fa-spinner fa-spin mr-2';
+    downloadText.textContent = 'Downloading...';
+    downloadBtn.disabled = true;
+
+    const cvPath = 'cv/CV-M-Ghibran-Adean.pdf';
+
+    fetch(cvPath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('File CV tidak ditemukan');
+            }
+            return response.blob();
+        })
+        .then(blob => {
+            // Buat URL untuk blob
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'CV-M-Ghibran-Adean.pdf';
+            
+            // Trigger download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Bersihkan URL
+            window.URL.revokeObjectURL(url);
+            
+            // Reset tombol
+            downloadIcon.className = 'fas fa-download mr-2';
+            downloadText.textContent = 'Download CV';
+            downloadBtn.disabled = false;
+        })
+        .catch(error => {
+            console.error('Error downloading CV:', error);
+            alert('Maaf, file CV tidak dapat didownload. Pastikan file sudah tersedia.');
+            
+            // Reset tombol
+            downloadIcon.className = 'fas fa-download mr-2';
+            downloadText.textContent = 'Download CV';
+            downloadBtn.disabled = false;
+        });
+}
