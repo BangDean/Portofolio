@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Portofolio M.Ghibran Adean</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,7 +13,7 @@
     <nav id="navbar" class="navbar-fixed bg-gray-900 shadow-lg">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold text-gray-300">Portofolio</div>
+                <div class="text-2xl font-bold text-gray-300">M.Ghibran Adean</div>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="nav-link text-gray-300 hover:text-gray-100 transition duration-300 font-medium">Home</a>
                     <a href="#about" class="nav-link text-gray-300 hover:text-gray-100 transition duration-300 font-medium">About Me</a>
@@ -44,7 +44,7 @@
     <section id="home" class="hero-bg min-h-screen flex items-center pt-20 relative section-animate">
         <div class="container mx-auto px-6 text-center text-white relative z-10">
             <div class="mb-8 animate-element" data-delay="0">
-                <img src="gambar/Profil.jpg" 
+                <img src="gambar/profile.jpg" 
                      alt="Profile Photo" 
                      class="profile-image mx-auto">
             </div>
@@ -55,33 +55,18 @@
             </h1>
             <div class="text-2xl mb-8 animate-element" data-delay="400">
                 <div class="typing-animation">
-                    <span class="typing-text active">Web Developer</span>
+                    <span class="typing-text active">AI-Assisted Web Developer</span>
                     <span class="typing-text">Graphic Designer</span>
                     <span class="typing-text">Database Administrator</span>
                 </div>
             </div>
             
             <div class="mb-8 animate-element" data-delay="600">
-                <button class="btn-primary btn-animate text-white px-8 py-3 rounded-full font-semibold mr-4 inline-flex items-center">
-                    <i class="fas fa-download mr-2"></i>Download CV
+                <button id="downloadCV" class="btn-primary btn-animate text-white px-8 py-3 rounded-full font-semibold mr-4 inline-flex items-center">
+                    <i id="downloadIcon" class="fas fa-download mr-2"></i>
+                    <span id="downloadText">Download CV</span>
                 </button>
             </div>
-            
-            <div class="flex justify-center space-x-6 animate-element" data-delay="800">
-                <a href="https://www.instagram.com/ghibranadn/" class="social-link text-gray-300 text-3xl">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/m-ghibran-adean-702470369" class="social-link text-gray-300 text-3xl">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://wa.me/qr/OHL2UEOV6NWIE1" class="social-link text-gray-300 text-3xl">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://www.facebook.com/share/176zBEcsSj/" class="social-link text-gray-300 text-3xl">
-                    <i class="fab fa-facebook"></i>
-                </a>
-            </div>
-        </div>
     </section>
 
     <!-- About Me Section -->
@@ -323,31 +308,72 @@
                 <h2 class="text-4xl font-bold text-white mb-4">Contact Me</h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto rounded-full"></div>
             </div>
-            
             <div class="max-w-2xl mx-auto animate-element" data-delay="200">
                 <form class="bg-gray-800 rounded-2xl shadow-2xl p-8 border border-gray-700 hover-lift">
-                    <div class="grid md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label class="block text-gray-300 text-sm font-bold mb-2">Nama</label>
-                            <input type="text" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required>
+                                <div class="max-w-2xl mx-auto text-center animate-element" data-delay="200">
+                                    <div class="bg-gray-800 rounded-2xl shadow-2xl p-12 border border-gray-700 hover-lift">
+                                        <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                                            Mari terhubung dan berdiskusi tentang teknologi, proyek, atau peluang kerjasama. 
+                                            Saya selalu terbuka untuk ide-ide baru dan kolaborasi yang menarik!
+                                        </p>
+                                
+                                <!-- Social Media Links -->
+                                <div class="flex justify-center space-x-8 mb-8">
+                                    <a href="https://www.instagram.com/ghibranadn/" 
+                                    target="_blank" 
+                                    class="social-link text-gray-300 hover:text-pink-400 transition duration-300 transform hover:scale-110 group">
+                                        <div class="flex flex-col items-center">
+                                            <i class="fab fa-instagram text-4xl mb-2 group-hover:animate-bounce"></i>
+                                            <span class="text-sm font-medium">Instagram</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="https://www.linkedin.com/in/m-ghibran-adean-702470369" 
+                                    target="_blank" 
+                                    class="social-link text-gray-300 hover:text-blue-400 transition duration-300 transform hover:scale-110 group">
+                                        <div class="flex flex-col items-center">
+                                            <i class="fab fa-linkedin text-4xl mb-2 group-hover:animate-bounce"></i>
+                                            <span class="text-sm font-medium">LinkedIn</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="https://wa.me/qr/OHL2UEOV6NWIE1" 
+                                    target="_blank" 
+                                    class="social-link text-gray-300 hover:text-green-400 transition duration-300 transform hover:scale-110 group">
+                                        <div class="flex flex-col items-center">
+                                            <i class="fab fa-whatsapp text-4xl mb-2 group-hover:animate-bounce"></i>
+                                            <span class="text-sm font-medium">WhatsApp</span>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="https://www.facebook.com/share/176zBEcsSj/" 
+                                    target="_blank" 
+                                    class="social-link text-gray-300 hover:text-blue-500 transition duration-300 transform hover:scale-110 group">
+                                        <div class="flex flex-col items-center">
+                                            <i class="fab fa-facebook text-4xl mb-2 group-hover:animate-bounce"></i>
+                                            <span class="text-sm font-medium">Facebook</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Additional Contact Info -->
+                                <div class="text-center">
+                                    <p class="text-gray-400 text-sm mb-4">
+                                        Atau hubungi saya langsung melalui:
+                                    </p>
+                                    <div class="flex justify-center space-x-6 text-sm">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-envelope mr-2 text-gray-500"></i>
+                                            <span class="text-gray-300">mghibranadean@email.com</span>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <i class="fas fa-phone mr-2 text-gray-500"></i>
+                                            <span class="text-gray-300">+62 895-6364-91850</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <label class="block text-gray-300 text-sm font-bold mb-2">Email</label>
-                            <input type="email" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required>
-                        </div>
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-gray-300 text-sm font-bold mb-2">Subject</label>
-                        <input type="text" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required>
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-gray-300 text-sm font-bold mb-2">Pesan</label>
-                        <textarea rows="5" class="w-full px-4 py-3 border border-gray-600 bg-gray-700 text-white rounded-lg focus:outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-500 transition duration-300" required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn-primary btn-animate text-white px-8 py-3 rounded-lg font-semibold inline-flex items-center">
-                            <i class="fas fa-paper-plane mr-2"></i>Kirim Pesan
-                        </button>
                     </div>
                 </form>
             </div>
