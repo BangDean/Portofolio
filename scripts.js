@@ -591,7 +591,7 @@ function initializeProjectsSlider() {
 
     // Quick View Modal functionality
     const projectData = {
-        ecommerce: {
+        education: {
             title: "Website Belajar Bahasa Inggris Online",
             content: `
                 <div class="grid md:grid-cols-2 gap-6">
@@ -646,7 +646,7 @@ function initializeProjectsSlider() {
                 </div>
             `
         },
-        lms: {
+        listrik: {
             title: "Website Analisa Harga Listrik",
             content: `
                 <div class="grid md:grid-cols-2 gap-6">
@@ -671,7 +671,7 @@ function initializeProjectsSlider() {
                 </div>
             `
         },
-        portfolio: {
+        kamera: {
             title: "Kamera Keamanan Berbasis Face Recognition",
             content: `
                 <div class="grid md:grid-cols-2 gap-6">
